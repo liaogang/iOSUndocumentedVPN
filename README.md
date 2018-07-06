@@ -24,7 +24,7 @@
 这样就可以把原来在PacketTunnel中的实现，一层不变的移植到iOS8上.
 
 ### 几个关键的点
-1. 首先确保项目的配置文件里置有这个字段，有了这个，在installd安装app的时候才会把搜索你的安装包，把包里后缀名为.vpnplugin的文件夹拷贝到特定目录，供neagent加载。 .vpnplugin里的文件可以按照Framework的结构来生成. 
+1. 首先确保项目的配置文件里置有这个字段，有了这个，在installd安装app的时候才会把搜索你的安装包，把包里后缀名为.vpnplugin的文件夹拷贝到特定目录(/private/var/mobile/Containers/Data/VPNPlugin/BD579B95-919D-42D5-B135-916C6BB2522F/)，供neagent加载。 .vpnplugin里的文件可以按照Framework的结构来生成. 
 
    ```
 	<key>UIVPNPlugin</key>
@@ -88,7 +88,8 @@ void NEVirtualInterfaceWriteIPPacket(NEVirtualInterface vi,int protocol,Byte* bu
 
 ## 成品
 
-Cydia源: http://23.105.215.216/cydia
+Cydia源: http://23.105.215.216/cydia 
+
 手机隧道 for iOS8
 
 ## Test
