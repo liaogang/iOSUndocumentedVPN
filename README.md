@@ -88,8 +88,8 @@ void NEVirtualInterfaceWriteIPPacket(NEVirtualInterface vi,int protocol,Byte* bu
 
 ## 成品
 
-http://23.105.215.216/cydia
-AyySync,手机隧道 for iOS8
+Cydia源: http://23.105.215.216/cydia
+手机隧道 for iOS8
 
 ## Test
 
